@@ -1,0 +1,14 @@
+package example:my-game;
+
+world my-game {
+  resource foo {
+    constructor(bar: string);
+  }
+  import my-func: func(options: option<options>);
+  record options {
+    a: string,
+    b: list<string>,
+    c: foo,
+  }
+  export run: func();
+}
